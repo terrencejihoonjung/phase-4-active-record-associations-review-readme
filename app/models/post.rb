@@ -1,2 +1,4 @@
 class Post < ApplicationRecord
-end
+    belongs_to :author
+    has_many :post_tags
+  end
